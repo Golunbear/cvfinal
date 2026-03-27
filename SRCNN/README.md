@@ -1,8 +1,7 @@
-# SRCNN
+# How to Train SRCNN
 
 This repository is implementation of the ["Image Super-Resolution Using Deep Convolutional Networks"](https://arxiv.org/abs/1501.00092).
 
-<center><img src="./thumbnails/fig1.png"></center>
 
 ## Differences from the original
 
@@ -127,3 +126,33 @@ PSNR was calculated on the Y channel.
     	</td>
     </tr>
 </table>
+
+# How ro Run Super Resolution
+
+## in the `video_hr.py`
+
+Requirements
+
+- cv2
+- argparse
+- subprocess
+- numpy
+- torch
+- **ffmpeg**
+
+```bash
+python video_hr.py \
+  --input whaterer/input.mp4 \
+  --output whichever/out.mp4 \
+  --weights yourpath/srcnn.pth \
+  --scale 2 \
+  --fps 30 \
+  --max_seconds 5 \
+  --resize_width 640
+
+```
+`.pth` file can be downloaded in the **Test** above or train by yourself.
+`scale` can be 2, 3, 4, larger number indicates more workload.
+`fps` should be smaller than your input file to reduce workload.
+`max_second` is the length you want to cut from original video.
+`resize_width` reduce the size and resolution.
