@@ -1,0 +1,754 @@
+[
+    {
+        "type": "text",
+        "text": "Project 1: Video Super-Resolution ",
+        "text_level": 1,
+        "bbox": [
+            248,
+            131,
+            749,
+            156
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "AIAA 3201—Introduction to Computer Vision ",
+        "bbox": [
+            294,
+            177,
+            702,
+            193
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Term Project Instruction ",
+        "bbox": [
+            386,
+            221,
+            608,
+            237
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Spring 2026 ",
+        "bbox": [
+            443,
+            258,
+            552,
+            275
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/5841470377c5b179390571fa8bc5fcf07f36700927001b8030111b21e9e86d29.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "bbox": [
+            117,
+            292,
+            878,
+            590
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1 Overview ",
+        "text_level": 1,
+        "bbox": [
+            115,
+            629,
+            273,
+            646
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Core Task: Given a low-resolution (LR) video, students are required to design a pipeline to reconstruct a high-resolution (HR) version. The system must not only enhance spatial details of individual frames but also effectively utilize and maintain temporal consistency across the video sequence. ",
+        "bbox": [
+            114,
+            662,
+            882,
+            726
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts: ",
+        "text_level": 1,
+        "bbox": [
+            115,
+            734,
+            257,
+            750
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Image Interpolation: Spatial Resampling. ",
+            "• Feature Alignment: Optical Flow & Deformable Convolution. ",
+            "• Recurrent Networks: Bidirectional Temporal Propagation. ",
+            "• Generative AI: Flow Matching & Diffusion Priors. "
+        ],
+        "bbox": [
+            142,
+            758,
+            685,
+            845
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Group Size: 2 students per group. ",
+        "bbox": [
+            115,
+            854,
+            410,
+            871
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_number",
+        "text": "1 ",
+        "bbox": [
+            492,
+            938,
+            505,
+            950
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2 Submission Requirements ",
+        "text_level": 1,
+        "bbox": [
+            115,
+            85,
+            468,
+            104
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "• PDF Report (Mandatory): ",
+        "bbox": [
+            142,
+            117,
+            415,
+            134
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "– Format: Use the CVPR LaTeX Template. The length must be 6–8 pages (excluding references). ",
+            "– ArXiv Upload: You are required to upload your final report to arXiv. Remember to change the “REVIEW version” to “CAMERA-READY version” in template. Please also clearly indicate your arXiv ID on the first page of the Canvas submission. "
+        ],
+        "bbox": [
+            179,
+            141,
+            877,
+            229
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "– Content Requirements: ",
+        "bbox": [
+            181,
+            237,
+            421,
+            254
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Abstract & Introduction: Background, motivation and solution overview. Explicitly include your GitHub repository link at the end of abstract. ",
+            "2. Related Work: You must review and cite at least all papers listed in the Recommended Reading List (Section 4). Expanding beyond this list is encouraged. ",
+            "3. Method: Explain the technical roadmaps in your own words. Use highquality flowcharts to assist your explanation. ",
+            "4. Experiments: Present quantitative results (Tables) and qualitative analysis (Figures). ",
+            "5. Conclusion: Summary, limitations, and future work. "
+        ],
+        "bbox": [
+            211,
+            262,
+            877,
+            439
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Code (Mandatory): Upload your code to a public GitHub repository with a clear README.md explaining how to run it. Do not submit raw code files. Include dependencies, usage, weights, and visual results in your README. ",
+            "• Demo Video (Mandatory): You are required to submit processed video files for all mandatory datasets. Pack them into a zip file named videos.zip and upload it to Canvas. "
+        ],
+        "bbox": [
+            142,
+            447,
+            877,
+            550
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for Success ",
+        "text_level": 1,
+        "bbox": [
+            115,
+            560,
+            371,
+            577
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Method Flexibility: You are encouraged to follow our suggested roadmap, but you are also free to design your own optimal method. Strict adherence to the “Implementation Roadmap” is not mandatory as long as the core tasks are fulfilled. ",
+            "• Completeness: All three parts are mandatory. If you fail to complete Part 3, you must discuss the reasons and demonstrate failure cases to receive a decent score. Ignoring it completely will result in an “Incomplete” grade. ",
+            "• Visuals: Clean and aesthetic visualizations (e.g., flowcharts, rendering comparisons, zoom-in patches) are crucial for a Computer Vision course and will significantly improve your score. ",
+            "• Dataset Scope: Completing only the mandatory datasets ensures a passing grade. To achieve a high score, you are expected to report experimental results on additional data (such as REDS [12] or Vimeo-90K [13]). ",
+            "• Citations: Ensure all related works and methods are correctly cited. "
+        ],
+        "bbox": [
+            142,
+            583,
+            877,
+            825
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3 Guide to Start ",
+        "text_level": 1,
+        "bbox": [
+            115,
+            848,
+            334,
+            865
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "To help you get started efficiently, we recommend the following workflow: ",
+        "bbox": [
+            115,
+            879,
+            710,
+            895
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "2 ",
+        "bbox": [
+            492,
+            938,
+            505,
+            950
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Step 1: Literature Review. Carefully read the papers listed in the Recommended Reading List (Section 4). Understanding the core concepts of Image Interpolation, Feature Alignment, and Recurrent Networks is crucial before coding. ",
+            "2. Step 2: Code Familiarization. Clone the official repositories of the baseline methods (e.g., BasicVSR, Real-ESRGAN). Run their provided demos to ensure your environment is set up and you understand the input/output formats. ",
+            "3. Step 3: Experimentation. Run the methods on the Mandatory Datasets (see Section 6.1). Adjust code as required by the roadmap. Save your visualization results. ",
+            "4. Step 4: Writing & Submission. Organize your results into tables and figures. Write your report using the CVPR template, citing ALL the references. Finally, upload your report to arXiv and submit the PDF report to Canvas. "
+        ],
+        "bbox": [
+            137,
+            85,
+            880,
+            287
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4 Recommended Reading List ",
+        "text_level": 1,
+        "bbox": [
+            115,
+            307,
+            497,
+            329
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Classic & CNN: SRCNN [1], SRGAN [2], EDSR [3] ",
+            "• Video SR (Alignment): EDVR [4], TDAN [5], BasicVSR [6], BasicVSR++ [7] ",
+            "• Generative / Recent SOTA: Real-ESRGAN [8], SR3 [9], Flow Matching [10], ControlNet [11] "
+        ],
+        "bbox": [
+            142,
+            341,
+            878,
+            423
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5 Implementation Roadmap ",
+        "text_level": 1,
+        "bbox": [
+            115,
+            444,
+            473,
+            464
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.1 Part 1: The Baseline – “Hand-crafted Approach” ",
+        "text_level": 1,
+        "bbox": [
+            115,
+            478,
+            663,
+            495
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Goal: Implement a basic video upscaling pipeline using classic image processing and early deep learning models to understand the fundamental trade-offs between speed and PSNR. ",
+        "bbox": [
+            114,
+            502,
+            880,
+            536
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1. Spatial Upsampling: Interpolation & SRCNN ",
+        "bbox": [
+            115,
+            543,
+            569,
+            560
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Step 1: Classic Interpolation. Implement Bicubic and Lanczos resampling as the absolute baseline. ",
+            "• Step 2: Simple CNN. Implement SRCNN [1] (or a similar 3-layer CNN) to learn the mapping from LR to HR patches. "
+        ],
+        "bbox": [
+            142,
+            568,
+            878,
+            640
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2. Temporal Baseline: Multi-frame Averaging ",
+        "bbox": [
+            115,
+            648,
+            547,
+            665
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Algorithm: For each frame, perform a weighted average of its spatial neighbors (after Bicubic upscaling) to observe the effect of simple temporal fusion on denoising and sharpening. ",
+            "• Advanced Idea: Apply Unsharp Masking on the averaged result to enhance highfrequency edges. "
+        ],
+        "bbox": [
+            142,
+            671,
+            878,
+            760
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Expected Result: Noticeable blurriness in complex textures; SRCNN performs slightly better than Bicubic but lacks temporal stability. ",
+        "bbox": [
+            114,
+            769,
+            880,
+            802
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.2 Part 2: SOTA Reproduction – “AI-driven Pipeline” ",
+        "text_level": 1,
+        "bbox": [
+            115,
+            818,
+            687,
+            837
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Goal: Implement a modern VSR framework that explicitly handles temporal alignment and long-range feature propagation. ",
+        "bbox": [
+            114,
+            844,
+            880,
+            878
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1. Feature Alignment & Reconstruction: BasicVSR [6] ",
+        "bbox": [
+            115,
+            884,
+            626,
+            902
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "3 ",
+        "bbox": [
+            492,
+            938,
+            505,
+            951
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Reason: BasicVSR is a landmark work that utilizes Bidirectional Propagation and Optical Flow (e.g., SpyNet) for feature alignment, significantly outperforming slidingwindow methods. ",
+            "• Key Learning Point: Understand how temporal redundancy is exploited through recurrent hidden states. "
+        ],
+        "bbox": [
+            142,
+            85,
+            880,
+            174
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2. Perceptual Enhancement: Real-ESRGAN [8] ",
+        "text_level": 1,
+        "bbox": [
+            115,
+            181,
+            559,
+            199
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Reason: To address the “regression-to-the-mean” problem (blurriness), introduce GANbased training with Perceptual Loss (VGG-based) to generate realistic textures. ",
+            "• Alternatives: Students may also choose BasicVSR++ [7] for better alignment via second-order grid propagation. "
+        ],
+        "bbox": [
+            142,
+            206,
+            880,
+            280
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Expected Result: Sharp edges and recovered textures; significantly higher visual quality than Part 1, though PSNR might be lower for GAN-based versions. ",
+        "bbox": [
+            114,
+            286,
+            880,
+            319
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.3 Part 3: Exploration – “Optimization & Extension” ",
+        "text_level": 1,
+        "bbox": [
+            115,
+            336,
+            675,
+            354
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Goal: Identify limitations (e.g., temporal flickering, hallucination artifacts) and attempt improvements. Choose at least one direction below: ",
+        "bbox": [
+            114,
+            362,
+            880,
+            394
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Direction A (Generative VSR): Introduce Flow Matching [10]. ",
+        "bbox": [
+            142,
+            401,
+            742,
+            418
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Idea: Traditional Diffusion VSR is slow. Try implementing a Flow Matching based upscaler (e.g., adapted from Flux or Pyramidal Flow) to achieve high-fidelity reconstruction with fewer sampling steps and straighter ODE trajectories. ",
+        "bbox": [
+            159,
+            419,
+            880,
+            467
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Direction B (Consistent Enhancement): Stable Diffusion + ControlNet-Tile [11]. ",
+        "bbox": [
+            142,
+            474,
+            880,
+            507
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Idea: Use Stable Diffusion [16] as a strong generative prior. Use ControlNet-Tile to maintain structural fidelity while hallucinating high-frequency details. Explore LoRA [17] or Adapter techniques to ensure temporal consistency between frames. ",
+        "bbox": [
+            159,
+            507,
+            880,
+            556
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Direction C (Uncertainty-Aware Refinement): Adaptive Hybrid Pipeline. ",
+        "bbox": [
+            142,
+            563,
+            843,
+            579
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Idea: Generative models often create artifacts. Design a system that calculates Pixelwise Uncertainty. Use BasicVSR++ for certain regions (e.g., text, faces) and Generative models for uncertain textures (e.g., grass, water). ",
+        "bbox": [
+            159,
+            579,
+            880,
+            629
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "6 Dataset & Evaluation ",
+        "text_level": 1,
+        "bbox": [
+            115,
+            650,
+            418,
+            667
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "6.1 Datasets ",
+        "text_level": 1,
+        "bbox": [
+            115,
+            683,
+            258,
+            699
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Wild Video (Mandatory): Film a real-world low-light or low-resolution video (e.g., using an old phone) to verify real-world generalization. ",
+            "2. Sample Data (Mandatory): The provided REDS-sample and Vimeo-LR clips. ",
+            "3. Standard Benchmarks (Optional but Recommended): A standard academic dataset providing high-quality videos and Ground Truth (GT). (e.g., REDS [12] or Vimeo-90K [13]). Required for high scores. "
+        ],
+        "bbox": [
+            137,
+            708,
+            887,
+            822
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "6.2 Metrics (Mandatory) ",
+        "text_level": 1,
+        "bbox": [
+            115,
+            839,
+            381,
+            857
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Pixel Accuracy: PSNR & SSIM [14]. Evaluate for Part 1 and Part 2 (and Part 3 if improved). ",
+        "bbox": [
+            142,
+            864,
+            880,
+            897
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "4 ",
+        "bbox": [
+            492,
+            938,
+            505,
+            950
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Perceptual Quality: LPIPS [15] (Learned Perceptual Image Patch Similarity) and FID (Fr´echet Inception Distance). ",
+            "• Temporal Consistency: tLP IP S [18] (Temporal LPIPS) to measure flickering artifacts between consecutive frames. ",
+            "• Qualitative Evaluation: Visual comparison of restored frames across different methods. Note: You must submit the processed video files for all Mandatory Datasets. "
+        ],
+        "bbox": [
+            144,
+            84,
+            880,
+            198
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "References ",
+        "text_level": 1,
+        "bbox": [
+            117,
+            219,
+            250,
+            237
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "[1] Dong, C., et al. “Image super-resolution using deep convolutional networks.” TPAMI 2015. ",
+            "[2] Ledig, C., et al. “Photo-realistic single image super-resolution using a generative adversarial network.” CVPR 2017. ",
+            "[3] Lim, B., et al. “Enhanced deep residual networks for single image super-resolution.” CVPRW 2017. ",
+            "[4] Wang, Z., et al. “EDVR: Video restoration with enhanced deformable convolutional networks.” CVPRW 2019. ",
+            "[5] Tian, Y., et al. “TDAN: Temporally-deformable alignment network for video superresolution.” CVPR 2020. ",
+            "[6] Chan, K. C., et al. “BasicVSR: The search for essential components in video superresolution and beyond.” CVPR 2021. ",
+            "[7] Chan, K. C., et al. “BasicVSR++: Improving video super-resolution with enhanced propagation and alignment.” CVPR 2022. ",
+            "[8] Wang, X., et al. “Real-ESRGAN: Training real-world blind iterative super-resolution with pure synthetic data.” ICCVW 2021. ",
+            "[9] Saharia, C., et al. “Image super-resolution via iterative refinement.” TPAMI 2022. ",
+            "[10] Lipman, Y., et al. “Flow matching for generative modeling.” ICLR 2023. ",
+            "[11] Zhang, L., et al. “Adding conditional control to text-to-image diffusion models.” ICCV 2023. ",
+            "[12] Seungjun Nah, et al. NTIRE 2019 Challenge on Video Deblurring and Super-Resolution: Dataset and Study. CVPR Workshops, 2019. ",
+            "[13] Tianfan Xue, et al. Video Enhancement with Task-Oriented Flow. International Journal of Computer Vision (IJCV), 2019. ",
+            "[14] Zhou Wang, et al. Image quality assessment: From error visibility to structural similarity. IEEE Transactions on Image Processing (TIP), 2004. ",
+            "[15] Richard Zhang, et al. The Unreasonable Effectiveness of Deep Features as a Perceptual Metric. CVPR, 2018. ",
+            "[16] Robin Rombach, et al. High-Resolution Image Synthesis with Latent Diffusion Models. CVPR, 2022. ",
+            "[17] Edward J. Hu, et al. LoRA: Low-Rank Adaptation of Large Language Models. ICLR, 2022. ",
+            "[18] Mengyu Chu, et al. Temporally Coherent GANs for Video Super-Resolution. ACM Transactions on Graphics (TOG), 2020. "
+        ],
+        "bbox": [
+            119,
+            252,
+            880,
+            904
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "5 ",
+        "bbox": [
+            492,
+            938,
+            504,
+            950
+        ],
+        "page_idx": 4
+    }
+]
