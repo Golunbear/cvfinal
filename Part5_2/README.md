@@ -22,7 +22,7 @@ python -m pip install -r requirements.txt
 Run commands from `Part5_2/`. The expected project layout is:
 
 ```text
-CVfinal/
+cvfinal/
   data/
     REDS/
       val/
@@ -274,8 +274,6 @@ Run unit tests:
 ```bash
 PYTHONPATH=src pytest -q
 ```
-
-The current tests verify the tLPIPS relative-delta formula.
 
 # Third-Party Sources and Citations
 
