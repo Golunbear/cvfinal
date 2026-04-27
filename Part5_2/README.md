@@ -6,7 +6,7 @@ Three independent baselines are provided:
 - IconVSR: BasicVSR-style recurrent propagation with EDVR-M information refill at keyframes.
 - Real-ESRGAN: frame-by-frame perceptual SR with an RRDBNet generator.
 
-## Conda Environment
+## Create Conda Environment
 Create a clean conda environment, then install this package and its requirements from `Part5_2/`:
 
 ```bash
@@ -35,14 +35,12 @@ cvfinal/
   Part5_2/
 ```
 
-Supported dataset names:
-
 - `reds_val`: paired REDS validation data. Metrics are computed here; inference saves frames only.
 - `sample_reds`: LR-only sample REDS clips. Results and videos are saved, metrics are skipped.
 - `vimeo_lr`: LR-only Vimeo sample clips. Results and videos are saved, metrics are skipped.
 - `wild`: decoded frames from `data/wild-video/decoded_frames`. Results and videos are saved, metrics are skipped.
 
-## Weights
+## Download Weights
 
 Download all official checkpoints:
 
@@ -50,7 +48,7 @@ Download all official checkpoints:
 python -m part5_2.download_weights --weights_dir weights
 ```
 
-Download only IconVSR:
+Download certain checkpoint (for example, IconVSR):
 
 ```bash
 python -m part5_2.download_weights --weights_dir weights --models iconvsr
@@ -66,7 +64,7 @@ weights/RealESRGAN_x4plus.pth
 
 Manual URLs are listed in `src/part5_2/weights.py` if the server cannot download directly.
 
-## Decode Wild Video Once
+## Decode Wild Video 
 
 Wild videos are decoded in a separate step. Inference never reads the mp4 directly.
 
@@ -124,7 +122,7 @@ python -m part5_2.run_inference \
 
 ## Inference
 
-Mandatory sample data:
+- Mandatory sample data:
 ```
 # REDS-sample
 python -m part5_2.run_inference --model basicvsr --dataset sample_reds --data_root ../data --out_root outputs --device cuda
@@ -141,7 +139,7 @@ python -m part5_2.run_inference --model iconvsr --dataset vimeo_lr --data_root .
 python -m part5_2.run_inference --model realesrgan --dataset vimeo_lr --data_root ../data --out_root outputs --tile 512 --device cuda
 ```
 
-Full REDS Dataset, for quantitative metrics:
+- Full REDS Dataset, for quantitative metrics:
 
 ```
 python -m part5_2.run_inference --model basicvsr --dataset reds_val --data_root ../data --out_root outputs --device cuda
@@ -151,7 +149,7 @@ python -m part5_2.run_inference --model iconvsr --dataset reds_val --data_root .
 python -m part5_2.run_inference --model realesrgan --dataset reds_val --data_root ../data --out_root outputs --tile 512 --device cuda
 ```
 
-Wild video, using decoded frames:
+- Wild video, using decoded frames:
 ```
 python -m part5_2.run_inference --model basicvsr --dataset wild --wild_frames ../data/wild-video/decoded_frames/IMG_2175 --data_root ../data --out_root outputs --device cuda
 
@@ -231,7 +229,7 @@ outputs/metrics/summary_metrics.csv
 
 Implemented metrics:
 
-- PSNR and SSIM: RGB, full frame by default, configurable through `--crop_border`.
+- PSNR & SSIM: RGB, full frame by default, configurable through `--crop_border`.
 - LPIPS: `alex` backbone.
 - FID: clean-fid over all predicted frames and all GT frames for each dataset/model pair.
   Per-sequence FID is disabled by default; add `--sequence_fid` if you also want it.
