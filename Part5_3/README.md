@@ -172,7 +172,7 @@ python -m part5_3.run_inference --dataset wild --wild_frames ../data/wild-video/
 Useful controls:
 
 ```text
---strength 0.35
+--strength 0.25
 --control_scale 0.8
 --guidance_scale 5.0
 --steps 25
