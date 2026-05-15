@@ -539,3 +539,8 @@ python -m part5_3_da.visualize --methods fm_sr --dataset reds_val --data_root ..
 ```bash
 PYTHONPATH=src pytest -q
 ```
+
+## Contribution Statement
+
+- **Yuzhe Zhuang**: Part 2 and Part 3A
+- **Ziyu Liang**: Part 1 and Part 3B
