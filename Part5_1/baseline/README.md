@@ -63,16 +63,8 @@ python baseline_part1.py interpolate \
   --scale 4 --method lanczos
 ```
 
-### Step D: Train SRCNN on HR frames
 
-```bash
-python baseline_part1.py train_srcnn \
-  --hr_dir data/hr_frames \
-  --ckpt checkpoints/srcnn_x4.pth \
-  --scale 4 --epochs 50 --batch_size 8 --lr 1e-4
-```
-
-### Step E: Infer SRCNN from LR frames
+### Step D: Infer SRCNN from LR frames
 
 ```bash
 python baseline_part1.py infer_srcnn \
@@ -82,7 +74,7 @@ python baseline_part1.py infer_srcnn \
   --scale 4
 ```
 
-### Step F: Temporal baseline (weighted average)
+### Step E: Temporal baseline (weighted average)
 
 ```bash
 python baseline_part1.py temporal_avg \
@@ -101,7 +93,7 @@ python baseline_part1.py temporal_avg \
   --unsharp --unsharp_amount 0.6 --unsharp_sigma 1.2
 ```
 
-### Step G: Evaluate PSNR/SSIM and export CSV
+### Step F: Evaluate PSNR/SSIM and export CSV
 
 Fill average runtime ms/frame from your command logs:
 
@@ -117,7 +109,7 @@ python baseline_part1.py evaluate \
   tempavg_unsharp:outputs/tempavg_bicubic_unsharp:2.8
 ```
 
-### Step H: Export result videos
+### Step G: Export result videos
 
 ```bash
 python baseline_part1.py frames_to_video \

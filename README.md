@@ -6,16 +6,17 @@ This project focuses on Video Super-Resolution (VSR): reconstructing high-resolu
 
 The runnable parts are:
 
+- `Part5_1/`: Part 1 Baseline with bicubic, lanczos, SRCNN and Temporal average.
 - `Part5_2/`: Part 2 SOTA reproduction with BasicVSR, IconVSR, and Real-ESRGAN.
 - `Part5_3/`: Part 3 Exploration A, using Stable Diffusion + ControlNet-Tile + optional REDS LoRA + temporal blending.
 - `Part5_3B/`: Part 3 Exploration B, using Conditional Flow Matching / Flow-Matching Generative VSR.
 
 ## Recommended Workflow
-
-1. Run `Part5_2/` first to generate restored frames from BasicVSR, IconVSR, and Real-ESRGAN.
-2. Run `Part5_3/` for Exploration A. It reads restored frames from `Part5_2/outputs` and applies the Stable Diffusion + ControlNet-Tile enhancement pipeline.
-3. Run `Part5_3B/` for Exploration B. It also reads restored frames from `Part5_2/outputs`, then refines them with a task-specific Flow Matching U-Net.
-4. Run the evaluation and visualization scripts to generate metric CSV files and qualitative comparison images.
+1. Run `Part5_1/` to see result of baseline methods.
+2. Run `Part5_2/` first to generate restored frames from BasicVSR, IconVSR, and Real-ESRGAN.
+3. Run `Part5_3/` for Exploration A. It reads restored frames from `Part5_2/outputs` and applies the Stable Diffusion + ControlNet-Tile enhancement pipeline.
+4. Run `Part5_3B/` for Exploration B. It also reads restored frames from `Part5_2/outputs`, then refines them with a task-specific Flow Matching U-Net.
+5. Run the evaluation and visualization scripts to generate metric CSV files and qualitative comparison images.
 
 The commands below are written for Linux/bash.
 
