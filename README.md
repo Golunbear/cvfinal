@@ -41,6 +41,7 @@ cvfinal/
       vimeo-RL/
     wild-video/
       xxx.mp4
+  Part5_1/
   Part5_2/
   Part5_3/
   Part5_3B/
